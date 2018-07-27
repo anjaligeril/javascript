@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+	<head>
+		<script>
+				
+				function Check()
+				{
+				 var Number=document.getElementById("number").value;
+				 if(Number == 0){
+					alert("The number is zero");
+				}
+				 else if ((Number%2) == 0){
+					alert("its an even number");
+				 }
+				else{
+					alert("its an odd number");
+				}
+				}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="number" placeholder="Enter the number" id="number"><br>
+		<button type="button" onclick="Check()">Check</button>
+	</body>
+</html>
