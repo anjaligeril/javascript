@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title>SQUARE OR NOT</title>
+		<script>
+				
+				function square()
+				{
+				 	var Length=document.getElementById("length").value;
+					var Breadth=document.getElementById("breadth").value;
+					Length1=parseInt(Length);
+					Breadth1=parseInt(Breadth);
+				 if(Length1==Breadth1){
+					alert("Square" );
+				else{
+					alert("Not Square" );
+				}
+		</script>
+	</head>
+	<body>
+		<h1>Temperature Converter</h1><br><br>
+		<input type="text" name="length" placeholder="Enter the length" id="length"><br><br>
+		<input type="text" name="breadth" placeholder="Enter the breadth " id="breadth"><br><br>
+		<button type="button" onclick="square()">CHECK</button><br><br>
+		
+	</body>
+</html>
