@@ -1,0 +1,60 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<script>
+				
+				function validate()
+				{
+					document.getElementById("valfname").innerHTML="";
+					document.getElementById("vallname").innerHTML="";
+					document.getElementById("valemail").innerHTML="";
+					document.getElementById("valpassord").innerHTML="";
+					document.getElementById("valage").innerHTML="";
+					var FirstName=document.getElementById("firstname").value;
+					var LastName=document.getElementById("lastname").value;
+					var Email=document.getElementById("email").value;
+					var Password=document.getElementById("password").value;
+					var Age=document.getElementById("age").value;
+					var IsValidated=true;
+					if(FirstName==""){
+						document.getElementById("valfname").innerHTML= "Please enter the first name";
+						IsValidated=false;
+					}
+					if(LastName==""){
+						document.getElementById("vallname").innerHTML= "Please enter the last name";
+						IsValidated=false;
+					}
+					if(Email==""||!Email.includes("@")){
+						document.getElementById("valemail").innerHTML= "Please enter the Email address";
+						IsValidated=false;
+					}
+					if(Password==""){
+						document.getElementById("valpassord").innerHTML= "Please enter the Password";
+						IsValidated=false;
+					}
+					if(Age==""|| isNaN(Age)){
+						document.getElementById("valage").innerHTML= "Please enter the age";
+						IsValidated=false;
+					}
+					return IsValidated;
+				}
+		</script>
+	</head>
+	<body>
+		<h1>Sign In Form</h1><br><br>
+		<form action="#">
+			<input type="text" name="FirstName" placeholder="Enter the Your First Name" id="firstname"><br> 
+			<h3 id="valfname"></h3><br>
+			<input type="text" name="LastName" placeholder="Enter the Your Last Name" id="lastname"><br> 
+			<h3 id="vallname"></h3><br>
+			<input type="text" name="email" placeholder="Enter the Your email Address" id="email"><br> 
+			<h3 id="valemail"></h3><br>
+			<input type="password" name="password" placeholder="Enter the Password" id="password"><br> 
+			<h3 id="valpassord"></h3><br>
+			<input type="text" name="age" placeholder="Enter the age" id="age"><br> 
+			<h3 id="valage"></h3><br>
+			<input type="submit" value="Submit" onclick=" return validate()" >
+		</form>
+	</body>
+</html>
