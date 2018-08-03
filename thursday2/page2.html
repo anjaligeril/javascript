@@ -1,0 +1,39 @@
+<!Doctype html>
+
+<html lang="en">
+
+
+<head>
+	<title> thursday 1</title>
+
+	<script>
+		var Sent=prompt("enter the sentence");
+		var Length=Sent.length;
+		var Counter=0;
+		var Counter1=0;
+		for (var i=0;i<Length;i++){
+			if((Sent.charAt(i)=='a')||(Sent.charAt(i)=='A')){
+				Counter++;
+			}else if((Sent.charAt(i)=='e')||(Sent.charAt(i)=='E')){
+				Counter++;
+			}else if((Sent.charAt(i)=='i')||(Sent.charAt(i)=='I')){
+				Counter++;
+			}else if((Sent.charAt(i)=='o')||(Sent.charAt(i)=='O')){
+				Counter++;
+			}else if((Sent.charAt(i)=='u')||(Sent.charAt(i)=='U')){
+				Counter++;
+			}
+			else{
+				Counter1++;
+			}
+		}
+		alert("Vowels"+Counter);
+		alert("Consonents"+Counter1);
+	</script>
+
+</head>
+
+<body>
+
+</body>
+</html>
