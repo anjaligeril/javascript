@@ -6,13 +6,13 @@ body {
 			}
         
 			#wrapper {
-				height:1500px;
+				
 				width: 960px;
 				margin: 0 auto;
 				background-color:white;
 				opacity:0.9;
 				font-family: "Times New Roman", serif;
-				font-size:17px;
+				
 				
 			}
 			
@@ -31,17 +31,11 @@ body {
 				 text-decoration: underline;
 			}
 			
-			#navi {
-				margin-left:10px;
-				margin-right:10px;
-			}
-			
+					
 			#spelltest {
 				padding-top:20px;
 				border:1px solid black;
-				height:1100px;
-				margin-right:20px;
-				float:right;
+				
 			
 			}
 			
@@ -55,9 +49,7 @@ body {
 				margin-top:10px;
 			}
 			#footer{
-				font-weight:bold;
-				padding-left:250px;
-				padding-top:50px;
+				padding-top:10px;
 				font-family: "Georgia", serif;
 				font-size:20px;
 			}

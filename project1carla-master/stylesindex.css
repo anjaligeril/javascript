@@ -7,7 +7,7 @@ body {
 			}
         
 			#wrapper {
-				height:700px;
+				
 				width: 960px;
 				margin: 0 auto;
 				background-color:white;
@@ -30,11 +30,7 @@ body {
 				 color:Black;
 			}
 			
-			#navi {
-				margin-left:5px;
-				margin-right:5px;
-			}
-			
+					
 					
 			#carla{
 				padding-top:100px;
@@ -42,8 +38,7 @@ body {
 			#main {
 				border:1px solid black;
 				height:400px;
-				margin-right:20px;
-				float:right;
+				
 			
 			}
 			
@@ -52,12 +47,12 @@ body {
 				font-family: "Times New Roman", serif;
 				font-size:20px;
 				color:black;
+				
 			}
 			
 			#footer{
-				font-weight:bold;
-				padding-left:250px;
-				padding-top:50px;
+				
+				padding-top:10px;
 				font-family: "Georgia", serif;
 				font-size:20px;
 			}

@@ -7,14 +7,14 @@
 			}
         
 			#wrapper {
-				height:700px;
+				
 				width: 960px;
 				margin: 0 auto;
 				background-color:white;
 				opacity:0.9;
 				color:black;
 				font-family: "Times New Roman", serif;
-				font-size:17px;
+				
 			}
 			
 			#header {
@@ -32,16 +32,12 @@
 				 text-decoration: underline;
 			}
 			
-			#navi {
-				margin-left:10px;
-				margin-right:10px;
-			}
+			
 			
 			#dataentry {
 				border:1px solid black;
 				height:400px;
-				margin-right:20px;
-				float:right;
+				
 			
 			}
 			
@@ -62,9 +58,8 @@
 			}
 			
 			#footer{
-				font-weight:bold;
-				padding-left:250px;
-				padding-top:50px;
+				
+				padding-top:10px;
 				font-family: "Georgia", serif;
 				font-size:20px;
 			}
