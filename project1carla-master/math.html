@@ -8,16 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesmath.css">
+	<link rel="stylesheet" href="css/wow-animation/libs/animate.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div class="row" id="header">
             <div class="col-lg-5 col-md-5 col-sm-5" id="logo">
-                <img src="images/owl_logo.jpg" height="100" width="100" alt="logo">
+                <img src="images/owl_logo.jpg" class="wow shake" data-wow-duration="2s" height="100" width="100" alt="logo">
             </div>
             <div class="col-lg-7 col-md-7 col-sm-7" id="name">
-                <h1>Carla's Classroom </h1>
+                <h1 class="wow shake" data-wow-duration="2s">Carla's Classroom </h1>
             </div>
         </div>
         <div class="row" id="navi">
@@ -58,7 +59,7 @@
             <div class="col-lg-10 col-md-10 col-sm-10" id="spelltest">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img src="images/carla_pic.jpg" alt="carla">
+                        <img src="images/carla_pic.jpg" class="wow rollIn" data-wow-duration="2s" alt="carla">
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-10">
                         <h2>It All Adds Up</h2>
@@ -79,5 +80,16 @@
             </div>
 	</div>
 </body>
-
+<script src="js/wow-animation/wow.js"></script>
+	 <script>
+		wow = new WOW(
+		{
+				animateClass: 'animated',
+				offset:       100,
+        
+		}
+		);
+		wow.init();
+  
+	</script>
 </html>

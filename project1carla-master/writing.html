@@ -9,16 +9,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styleswriting.css">
     <script src="writing.js"></script>
+	<link rel="stylesheet" href="css/wow-animation/libs/animate.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div class="row" id="header">
             <div class="col-lg-5 col-md-5 col-sm-5" id="logo">
-                <img src="images/owl_logo.jpg" height="100" width="100" alt="logo">
+                <img src="images/owl_logo.jpg" class="wow shake" data-wow-duration="2s" height="100" width="100" alt="logo">
             </div>
             <div class="col-lg-7 col-md-7 col-sm-7" id="name">
-                <h1>Carla's Classroom </h1>
+                <h1 class="wow shake" data-wow-duration="2s">Carla's Classroom </h1>
             </div>
         </div>
         <div class="row" id="navi">
@@ -61,27 +62,27 @@
                         <p> For this exercise you will be shown some pictures and,for each picture you will be asked to spell the word that describes the picture. Type your answers in all lowercase letters</p>
                         <br>
                         <p> Q1. What is this?
-                            <img src="images/avocado.jpg" alt="list1" class="image"></p>
+                            <img src="images/avocado.jpg" class="wow flipInX"  data-wow-duration="2s"  alt="list1" class="image"></p>
                         <button type="button" onclick="enteranswer1()" class="but">Answer Q1</button>
                         <button type="button" onclick="showresult1()">Check Answer</button>
                         <br>
                         <p> Q2. What is this?
-                            <img src="images/bananas.jpg" alt="list2" class="image"></p>
+                            <img src="images/bananas.jpg" class="wow flipInX " data-wow-duration="2s"  alt="list2" class="image"></p>
                         <button type="button" onclick="enteranswer2()" class="but">Answer Q2</button>
                         <button type="button" onclick="showresult2()">Check Answer</button>
                         <br>
                         <p> Q3. What is this?
-                            <img src="images/celery.jpg" alt="list3" class="image"></p>
+                            <img src="images/celery.jpg"  class="wow flipInX"  data-wow-duration="2s" alt="list3" class="image"></p>
                         <button type="button" onclick="enteranswer3()" class="but">Answer Q3</button>
                         <button type="button" onclick="showresult3()">Check Answer</button>
                         <br>
                         <p> Q4. What is this?
-                            <img src="images/lemonade.jpg" alt="list4" class="image"></p>
+                            <img src="images/lemonade.jpg" class="wow flipInX" data-wow-duration="2s"  alt="list4" class="image"></p>
                         <button type="button" onclick="enteranswer4()" class="but">Answer Q4</button>
                         <button type="button" onclick="showresult4()">Check Answer</button>
                         <br>
                         <p> Q5. What is this?
-                            <img src="images/onions.jpg" alt="list5" class="image"></p>
+                            <img src="images/onions.jpg" class="wow flipInX"  data-wow-duration="2s" alt="list5" class="image"></p>
                         <button type="button" onclick="enteranswer5()" class="but">Answer Q5</button>
                         <button type="button" onclick="showresult5()">Check Answer</button>
                  
@@ -96,5 +97,16 @@
     </div>
 
 </body>
-
+<script src="js/wow-animation/wow.js"></script>
+	 <script>
+		wow = new WOW(
+		{
+				animateClass: 'animated',
+				offset:       100,
+        
+		}
+		);
+		wow.init();
+  
+	</script>
 </html>
