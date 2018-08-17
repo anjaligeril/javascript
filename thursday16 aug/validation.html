@@ -1,0 +1,33 @@
+<!Doctype html>
+
+<html lang="en">
+
+	<head>
+		<script>
+			var String=prompt("Enter the string");
+			check(String);
+			function check(String){
+				var counter1=0;//character
+				var counter2=0;//Numbers
+				var Length=String.length;
+				for(i=0;i<Length;i++){
+					if(isNaN(parseInt(String.charAt(i)))){
+						counter1++;
+					}else
+					counter2++;
+				}
+				alert("No of characters"+counter1+"No of Numbers"+counter2);
+			}
+			
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="row">
+			
+		</div>
+
+	</body>
+
+</html>
