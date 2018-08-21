@@ -7,6 +7,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/wow-animation/libs/animate.css">
+		
 		<style>
 			body{
 				font-family: "Times New Roman", Times, serif;
@@ -51,17 +52,31 @@
 			
 			.bandimage:hover{
 			border:10px solid #ddd;
+		
+			
 			}
 			
-			#tour{
-				background-color:#2d2d30;
+			#tour1{
+				
 				color:white;
-				margin-left:30px;
+				
+			}
+			#tour{
+					background-color:#2d2d30;
 			}
 			
 			#backvideo{
 			height:100%;
 			width:100%;
+			}
+			
+			#bannerhead{
+				position:absolute;
+				top:300px;
+				right:700px;
+				z-index:500;
+				color:white;
+				
 			}
 		</style>
 		
@@ -105,9 +120,11 @@
 		<div class="row" id="banner">
 			<div id="backvideo">
 				<video autoplay muted loop width="100%">
-					<source src="mov_bbb.mp4" type="video/mp4">
+					<source src="sample.mp4" type="video/mp4">
 				</video>
+				<h1 id="bannerhead" class="text-center">BAND</h1>
 			</div>
+			
 		</div>
 		
 		<div class="row " id="theband" >
@@ -128,25 +145,35 @@
 			<div class="row " >
 				<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3" >
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					
+					<div class="col-lg-4 col-md-4 col-sm-4  ">
 						<h4 class="text-center band">Name</h4>
-						<img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage" alt="bandmember1">
+						<a href="#" data-toggle="collapse" data-target="#thebandexpand"><img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage " alt="bandmember1" ></a>
+						<data class="collapse" id="thebandexpand">
+							<span>Guitarist and Lead Vocalist</span>
+								<span>Guitarist and Lead Vocalist</span>
+									<span>Guitarist and Lead Vocalist</span>
+						</data>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 ">
 						<h4 class="text-center band">Name</h4>
-						<img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage" alt="bandmember2">
+						<img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage" alt="bandmember2" onclick="content2()">
+						
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					
+					<div class="col-lg-4 col-md-4 col-sm-4 ">
 						<h4 class="text-center band">Name</h4>
-						<img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage" alt="bandmember3">
+						<img src="images/bandmember.jpg" class="img-circle img-responsive band bandimage " alt="bandmember3" onclick="content3()">
+						
 					</div>
 				</div>
 				</div>
 			</div>
-			
-			<div class="row text-center" >
-				<div class="col-lg-12 col-md-12 col-sm-12" id="tour">
-					<div class="row">
+		</div>	
+		<div class="row " id="tour" >
+				<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3" >
+					<div class="row text-center" id="tour1">
 						<h3>Tours Date</h3>
 						<span>Lorem ipsum we'll play you some music.</span><br>
 						<span>Remember to book your tickets!</span>
@@ -154,10 +181,34 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3" >
 							<ul class="list-group">
-								<li class="list-group-item">First item</li>
-								<li class="list-group-item">Second item</li>
-								<li class="list-group-item">Third item</li>
-</ul>
+								<li class="list-group-item">September<span class="label label-danger">Sold Out</span></li>
+								<li class="list-group-item">October<span class="label label-danger">Sold Out</span></li>
+								<li class="list-group-item">November<span class="badge">3</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="thumbnail">
+							<img src="https://www.w3schools.com/bootstrap/paris.jpg" width="300" height="300" alt="tour1">
+							<span>Paris</span>
+							<span>Friday 27 November 2015</span>
+							<button class="btn"></button>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="thumbnail">
+							<img src="https://www.w3schools.com/bootstrap/paris.jpg" width="300" height="300" alt="tour1">
+							<span>Paris</span>
+							<span>Friday 27 November 2015</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="thumbnail">
+							<img src="https://www.w3schools.com/bootstrap/paris.jpg" width="300" height="300" alt="tour1">
+							<span>Paris</span>
+							<span>Friday 27 November 2015</span>
+							</div>
 						</div>
 					</div>
 				</div>
