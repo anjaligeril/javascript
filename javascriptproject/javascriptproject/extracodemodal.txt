@@ -1,0 +1,21 @@
+"+
+				"<div class='modal fade' id='myModal' role='dialog'><div class='modal-content'><div class='modal-header'>"+
+				"<button type='button' class='close' data-dismiss='modal'></button><h4 class='modal-title'>"+users[i].name+"</h4>"+
+				"</div><div class='modal-body'><p>"+users[i].name+"</p></div><div class='modal-footer'><button type='button'"+
+				" class='btn btn-default' data-dismiss='modal'>Close</button></div></div></div>
+				
+				
+				<h4 class='card-text'> "
+				+ users[i].company.name + "</h4> <h5 class='card-text text-center'> " + users[i].email + " </h5>"
+				+"
+				
+				
+				"<div class='card col-lg-2 col-md-2 col-sm-2 well card1 ' id="+i+"  >"+
+				"<img class='card-img-top img-responsive img-rounded cardimg ' src='"+consimages[i]+"' alt='Card image cap'> <div class='card-body'> <h4 class='card-title text-center'> " + users[i].name + " </h4> <button type='btn btn-info btn-lg'>Contact Info</button></div> </div>    ";
+				
+				
+				`<div class="card col-lg-2 col-md-2 col-sm-2 well card1">
+					<img class="card-img-top img-responsive img-rounded cardimg" src="${consimages[i]}" alt="Card image cap">
+					<div class="card-body">
+						 <h4 class="card-title text-center">${users[i].name}</h4>
+						<button type="btn btn-info btn-lg">Contact Info</button>
